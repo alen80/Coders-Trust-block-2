@@ -1,0 +1,112 @@
+@charset "UTF-8";
+body, h1, h2, h3, h4, h5, h6, p, div, ul, li {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: Verdana, Geneva, sans-serif;
+	background-color: #000;
+}
+#wrapper {
+	width: 700px;
+	margin: 20px auto;
+}
+#header {
+	width: 700px;
+	background: url(header-bg.jpg);	
+	text-align: center;
+}
+#header img {
+	padding: 20px 0px;
+}
+.line {
+	width: 700px;
+	background: #999;
+	height: 1px;
+}
+#links {
+	width: 700px;
+	background: #666;
+}
+#nav {
+	width: 384px;
+	background: #666;
+	height: 36px;
+	margin: 0 auto;
+}
+#nav ul {
+	list-style: none;
+}
+#nav ul li {
+	float: left;
+}
+#nav ul li a {
+	display: block;
+	height: 20px;
+	line-height: 20px;
+	background: #000;/*zdefiniowanie dla ie - nie czyta gradientu*/
+	width: 80px;
+	font-size: 0.8em;
+	font-weight: bold;
+	color: #FFF;
+	text-align: center;
+	text-decoration: none;
+	margin: 7px;
+	border-radius: 5px;/*sprawdzałem na chrome, opera i fox - wyświetla się prawidłowo*/
+	border: 1px solid #000;
+	background: linear-gradient(#666, #333);/*nie działa w ie*/	
+}
+#nav ul li a:hover {
+	background: #333;
+	background: linear-gradient(#000, #666);	
+}	
+	
+#nav ul li a.current, #nav ul li a.current:hover{
+	background: #333;
+	background: linear-gradient(#000, #666);
+	color: #F63;
+	cursor: default;
+}
+#about {
+	width: 700px;
+	background: #333;
+	padding-top: 60px;
+	padding: 60px 0px;
+}
+#content {
+	width: 430px;
+	margin: 0 auto;
+	background: #222;
+	border: 1px solid #000;
+	background: linear-gradient(#999, #000, #222);
+	border-radius: 15px;
+	box-shadow: 10px 10px 4px #000;
+}
+#content img {
+	float: left;
+	border: 1px solid #000;
+	background: #333;
+	padding: 16px;
+	margin: 0.7em;
+	background: linear-gradient(#666, #000);
+	border-radius: 15px;
+}
+#content h5{
+	color: #FFF;
+	padding: 0.8em 0 0 0;	
+}	
+#content p {
+	font-size: 0.7em;
+	color: #999;
+	padding: 0.7em;
+	line-height: 1.4em;
+}
+footer {
+	background: #222;
+	height: 10px;
+	width: 700px;
+	border-bottom: 1px solid #333;
+}	
+	
+	
+	
