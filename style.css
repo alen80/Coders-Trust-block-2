@@ -11,37 +11,34 @@ body {
 	width: 700px;
 	margin: 20px auto;
 }
-#header {
-	width: 700px;
+header {
 	background: url(header-bg.jpg);	
 	text-align: center;
 }
-#header img {
+header img {
 	padding: 20px 0px;
-}
-.line {
-	width: 700px;
-	background: #999;
-	height: 1px;
+	width: 405px;
+	height: 68px;
 }
 #links {
-	width: 700px;
-	background: #666;
+	background: #666;	
 }
-#nav {
-	width: 384px;
+aside {
 	background: #666;
 	height: 36px;
 	margin: 0 auto;
+	border-top: 1px solid #999;
+	border-bottom: 1px solid #999;
 }
-#nav ul {
+aside ul {
 	list-style: none;
+	text-align: center;
 }
-#nav ul li {
-	float: left;
+aside ul li {
+	display: inline-block;
 }
-#nav ul li a {
-	display: block;
+aside ul li a {
+	display: inline-block;
 	height: 20px;
 	line-height: 20px;
 	background: #000;/*zdefiniowanie dla ie - nie czyta gradientu*/
@@ -49,31 +46,29 @@ body {
 	font-size: 0.8em;
 	font-weight: bold;
 	color: #FFF;
-	text-align: center;
 	text-decoration: none;
 	margin: 7px;
 	border-radius: 5px;/*sprawdzałem na chrome, opera i fox - wyświetla się prawidłowo*/
 	border: 1px solid #000;
 	background: linear-gradient(#666, #333);/*nie działa w ie*/	
 }
-#nav ul li a:hover {
+aside ul li a:hover {
 	background: #333;
 	background: linear-gradient(#000, #666);	
 }	
 	
-#nav ul li a.current, #nav ul li a.current:hover{
+aside ul li a.current, #nav ul li a.current:hover{
 	background: #333;
 	background: linear-gradient(#000, #666);
 	color: #F63;
 	cursor: default;
 }
 #about {
-	width: 700px;
 	background: #333;
 	padding-top: 60px;
 	padding: 60px 0px;
 }
-#content {
+article {
 	width: 430px;
 	margin: 0 auto;
 	background: #222;
@@ -82,7 +77,7 @@ body {
 	border-radius: 15px;
 	box-shadow: 10px 10px 4px #000;
 }
-#content img {
+article img {
 	float: left;
 	border: 1px solid #000;
 	background: #333;
@@ -91,11 +86,11 @@ body {
 	background: linear-gradient(#666, #000);
 	border-radius: 15px;
 }
-#content h5{
+article h5{
 	color: #FFF;
 	padding: 0.8em 0 0 0;	
 }	
-#content p {
+article p {
 	font-size: 0.7em;
 	color: #999;
 	padding: 0.7em;
@@ -104,7 +99,6 @@ body {
 footer {
 	background: #222;
 	height: 10px;
-	width: 700px;
 	border-bottom: 1px solid #333;
 }	
 	
