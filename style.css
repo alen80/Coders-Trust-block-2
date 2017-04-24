@@ -25,7 +25,6 @@ header img {
 }
 aside {
 	background: #666;
-	height: 36px;
 	margin: 0 auto;
 	border-top: 1px solid #999;
 	border-bottom: 1px solid #999;
@@ -86,7 +85,7 @@ article img {
 	background: linear-gradient(#666, #000);
 	border-radius: 15px;
 }
-article h5{
+article h2{
 	color: #FFF;
 	padding: 0.8em 0 0 0;	
 }	
